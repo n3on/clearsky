@@ -1,7 +1,7 @@
 clearsky
 ========
 
-A simple DirectX11-based 3D game engine I made some time ago to learn 3D graphics programming.
+A simple DirectX11-based 3D game engine I made some time ago
 
 Some of the features:
 - Quadtree heightmap terrain
