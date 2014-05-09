@@ -1,0 +1,12 @@
+-set include and lib path to clearsky
+-set include and lib path to directx SDK (june 2010 or higher)
+-set include and lib path to freetype(2.4.2 or higher) font library
+-set include and lib path to direct3d effects11 library(distributed with dx11 sdk as a source)
+-set include and lib path to tinyxml
+-set include and lib path to libogg
+-set include and lib path to libvorbis
+-set include and lib path to boost
+ 
+-add clearsky.lib to linker input
+
+-make sure that clearsky.dll, libogg.dll, libvorbis.dll and libvorbisfile.dll are in a reach auf your path variable or in the directory where you start the executable

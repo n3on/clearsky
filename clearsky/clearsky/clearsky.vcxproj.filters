@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{da2ff310-dbc3-469f-b2d4-4da6a5fcb7c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\core">
+      <UniqueIdentifier>{dbb0ef19-0202-4ff4-b1d5-ceaf56c55904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\inputsystem">
+      <UniqueIdentifier>{61494f14-782c-4c3e-b7f8-6559ad641a98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\math">
+      <UniqueIdentifier>{950b3aad-39ad-4f24-bc7b-f5ca4301767d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\rendersystem">
+      <UniqueIdentifier>{cdc3720b-e320-4922-b600-527a8eb47cc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\soundsystem">
+      <UniqueIdentifier>{b9f5f704-1b86-4a73-89b3-a9a27f6390d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{533a68fe-3883-4a25-b78b-c397cb1b0102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\math">
+      <UniqueIdentifier>{1f6c28f3-4f97-4322-8ecc-38f8f6f88495}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rendersystem">
+      <UniqueIdentifier>{1ce09da6-76dc-4d42-92a6-68e6c9fc482a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\soundsystem">
+      <UniqueIdentifier>{908b6436-36e9-49ba-8f21-b57b08da371d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{1063e316-d823-4508-8c8d-4dfabde3f0e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{fa7f6493-546b-4761-8fd6-e0baf147aa1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\inputsystem">
+      <UniqueIdentifier>{56a9c593-39c2-4406-b421-a8d4b77b9c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\physics">
+      <UniqueIdentifier>{e0749527-5b3d-4f21-95d5-3e52d570bc6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\physics">
+      <UniqueIdentifier>{5e54464e-9212-4491-b825-d0c1fccb0bc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\gui">
+      <UniqueIdentifier>{0ff04642-a459-4b01-bb08-a0ea59f64162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gui">
+      <UniqueIdentifier>{56b02c7f-db12-4242-bf6b-463792644406}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\rendersystem\directx11">
+      <UniqueIdentifier>{7eac4169-c950-4314-8094-9b02d6c0e36c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\rendersystem\directx11">
+      <UniqueIdentifier>{f8e5d25d-619c-4a16-be87-998887acc65e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\network">
+      <UniqueIdentifier>{99ad7bd7-b06c-483e-a289-004b19c7af5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\network">
+      <UniqueIdentifier>{fd0cfb18-6b65-42dd-ae0f-c08df0f4a8ab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\core\core.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\globals.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\logger.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\timer.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\utils.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\inputsystem\keyboardhandler.h">
+      <Filter>include\inputsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\mathutils.h">
+      <Filter>include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\box.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\camera.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\irenderer.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\light.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\mesh.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\skybox.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\soundsystem\Audio.h">
+      <Filter>include\soundsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\soundsystem\AudioBase.h">
+      <Filter>include\soundsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\soundsystem\codec.h">
+      <Filter>include\soundsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\soundsystem\SDKwavefile.h">
+      <Filter>include\soundsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\soundsystem\SoundBase.h">
+      <Filter>include\soundsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\soundsystem\SoundLoader.h">
+      <Filter>include\soundsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\soundsystem\vorbisfile.h">
+      <Filter>include\soundsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\soundsystem\XAudioIncludes.h">
+      <Filter>include\soundsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\ibuffer.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\ieffect.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\iinputlayout.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\itexture2D.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\resourcemanager.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\inputsystem\mousehandler.h">
+      <Filter>include\inputsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\terrain.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\soundsystem\SoundPool.h">
+      <Filter>include\soundsystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\physics\physics.h">
+      <Filter>include\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\physics\physicsIncludes.h">
+      <Filter>include\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\physics\physicsmath.h">
+      <Filter>include\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\physics\precision.h">
+      <Filter>include\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\fog.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\directx11\dx11buffer.h">
+      <Filter>include\rendersystem\directx11</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\directx11\dx11effect.h">
+      <Filter>include\rendersystem\directx11</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\directx11\dx11inputlayout.h">
+      <Filter>include\rendersystem\directx11</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\directx11\dx11renderer.h">
+      <Filter>include\rendersystem\directx11</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\directx11\dx11sprite.h">
+      <Filter>include\rendersystem\directx11</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\directx11\dx11texture2D.h">
+      <Filter>include\rendersystem\directx11</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gui\gui.h">
+      <Filter>include\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\network.h">
+      <Filter>include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\networkIncludes.h">
+      <Filter>include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\precompiled.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gui\mouse.h">
+      <Filter>include\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gui\window.h">
+      <Filter>include\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gui\guiskin.h">
+      <Filter>include\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\statedesc.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gui\imouselistener.h">
+      <Filter>include\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gui\button.h">
+      <Filter>include\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gui\iwindowlistener.h">
+      <Filter>include\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gui\event.h">
+      <Filter>include\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\font.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gui\statictext.h">
+      <Filter>include\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\submesh.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\networkData.h">
+      <Filter>include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\startparams.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\configurator.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\isprite.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\networkSocket.h">
+      <Filter>include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network\networkQueue.h">
+      <Filter>include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\particle.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\clearsky.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\vertexformats.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\viewfrustum.h">
+      <Filter>include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\boundingbox.h">
+      <Filter>include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\primitivedrawer.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\skeletonanim.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+    <ClInclude Include="include\core\tgaloader.h">
+      <Filter>include\core</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rendersystem\texturemanager.h">
+      <Filter>include\rendersystem</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\inputsystem\keyboardhandler.cpp">
+      <Filter>src\inputsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math\mathutils.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\box.cpp">
+      <Filter>src\rendersystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\camera.cpp">
+      <Filter>src\rendersystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\light.cpp">
+      <Filter>src\rendersystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\mesh.cpp">
+      <Filter>src\rendersystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\skybox.cpp">
+      <Filter>src\rendersystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\soundsystem\AudioBase.cpp">
+      <Filter>src\soundsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\soundsystem\SDKwavefile.cpp">
+      <Filter>src\soundsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\soundsystem\SoundBase.cpp">
+      <Filter>src\soundsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\soundsystem\SoundLoader.cpp">
+      <Filter>src\soundsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\core.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\globals.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\logger.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\timer.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\utils.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\resourcemanager.cpp">
+      <Filter>src\rendersystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inputsystem\mousehandler.cpp">
+      <Filter>src\inputsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\terrain.cpp">
+      <Filter>src\rendersystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\soundsystem\SoundPool.cpp">
+      <Filter>src\soundsystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\physics\physicsmath.cpp">
+      <Filter>src\physics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\fog.cpp">
+      <Filter>src\rendersystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\directx11\dx11buffer.cpp">
+      <Filter>src\rendersystem\directx11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\directx11\dx11effect.cpp">
+      <Filter>src\rendersystem\directx11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\directx11\dx11inputlayout.cpp">
+      <Filter>src\rendersystem\directx11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\directx11\dx11renderer.cpp">
+      <Filter>src\rendersystem\directx11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\directx11\dx11sprite.cpp">
+      <Filter>src\rendersystem\directx11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\directx11\dx11texture2D.cpp">
+      <Filter>src\rendersystem\directx11</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\gui.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\precompiled.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\mouse.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\window.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\guiskin.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\statedesc.cpp">
+      <Filter>src\rendersystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\button.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\font.cpp">
+      <Filter>src\rendersystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gui\statictext.cpp">
+      <Filter>src\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\submesh.cpp">
+      <Filter>src\rendersystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\startparams.cpp">
+      <Filter>src\rendersystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\configurator.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\network\networkSocket.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="src\network\networkQueue.cpp">
+      <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\particle.cpp">
+      <Filter>src\rendersystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math\viewfrustum.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\math\boundingbox.cpp">
+      <Filter>src\math</Filter>
+    </ClCompile>
+    <ClCompile Include="include\core\PathExtractor.h">
+      <Filter>include\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\primitivedrawer.cpp">
+      <Filter>src\rendersystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\skeletonanim.cpp">
+      <Filter>src\rendersystem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\tgaloader.cpp">
+      <Filter>src\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rendersystem\texturemanager.cpp">
+      <Filter>src\rendersystem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\data\shaders\default.fx">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\data\shaders\default2.fx">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\data\shaders\terrain.fx">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\data\shaders\water.fx">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\data\shaders\light.inc">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\data\shaders\bumpmap.inc">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

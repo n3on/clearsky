@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clearsky", "clearsky\clearsky.vcxproj", "{F7F1D7E6-F5C8-4A73-9699-B7E142849C28}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cleardemo", "cleardemo\cleardemo.vcxproj", "{85BD7A56-78DC-4A9D-9977-E98657EBC14A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7F1D7E6-F5C8-4A73-9699-B7E142849C28}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F7F1D7E6-F5C8-4A73-9699-B7E142849C28}.Debug|Win32.Build.0 = Debug|Win32
+		{F7F1D7E6-F5C8-4A73-9699-B7E142849C28}.Release|Win32.ActiveCfg = Release|Win32
+		{F7F1D7E6-F5C8-4A73-9699-B7E142849C28}.Release|Win32.Build.0 = Release|Win32
+		{85BD7A56-78DC-4A9D-9977-E98657EBC14A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{85BD7A56-78DC-4A9D-9977-E98657EBC14A}.Debug|Win32.Build.0 = Debug|Win32
+		{85BD7A56-78DC-4A9D-9977-E98657EBC14A}.Release|Win32.ActiveCfg = Release|Win32
+		{85BD7A56-78DC-4A9D-9977-E98657EBC14A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

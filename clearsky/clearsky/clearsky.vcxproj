@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F7F1D7E6-F5C8-4A73-9699-B7E142849C28}</ProjectGuid>
+    <RootNamespace>clearsky</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="propertysheet.props" />
+    <Import Project="tdl.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="propertysheetDebug.props" />
+    <Import Project="tdl.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\clearsky\libs\effects11\include;..\clearsky\libs\Visual Leak Detector\include;C:\Users\Symplatonix\Desktop\Coding\boost_1_43_0;G:\development\clearsky\clearcode\clearsky\clearsky\libs\vld-10;C:\Users\Symplatonix\Desktop\Coding\clearsky\clearsky\libs;C:\Users\Symplatonix\Desktop\Coding\libogg-1.1.4\include;C:\Users\Symplatonix\Desktop\Coding\libvorbis-1.2.3\include;$(DXSDK_DIR)\Include;C:\Users\tdl\Desktop\Coding\libogg-1.1.4\include;..\clearsky\include\;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\clearsky\libs\Visual Leak Detector\lib\Win32;..\clearsky\libs\Visual Leak Detector\lib\Win32;C:\Users\Symplatonix\Desktop\Coding\clearsky\clearsky\libs\effects11;C:\Users\Symplatonix\Desktop\Coding\clearsky\clearsky\libs;..\clearsky\Release;$(DXSDK_DIR)\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(LIB_VORBIS)\include;$(LIB_OGG)\include;$(DXSDK_DIR)\Include;..\clearsky\include\;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(LIB_VORBIS)\lib;$(LIB_OGG)\bin;..\clearsky\Release;$(DXSDK_DIR)\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\clearsky\libs\effects11\include;..\clearsky\libs\Visual Leak Detector\include;G:\development\clearsky\clearcode\clearsky\clearsky\libs\Visual Leak Detector\include;$(LIB_VORBIS)\include;$(LIB_OGG)\include;$(DXSDK_DIR)\Include;..\clearsky\include\;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\clearsky\libs\Visual Leak Detector\lib\Win32;G:\development\clearsky\clearcode\clearsky\clearsky\libs\Visual Leak Detector\lib\Win32;$(LIB_VORBIS)\lib;$(LIB_OGG)\bin;..\clearsky\Release;$(DXSDK_DIR)\Lib\x86;$(LibraryPath)</LibraryPath>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\development\clearsky\clearcode\clearsky\clearsky\libs\Visual Leak Detector\bin\Win32;$(ExecutablePath)</ExecutablePath>
+    <ExecutablePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\development\clearsky\clearcode\clearsky\clearsky\libs\Visual Leak Detector\bin\Win32;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;CLEARSKY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WIN32_WINNT=0x0501;_WINDOWS;_USRDLL;CLEARSKY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d10.lib;d3dx10.lib;%(AdditionalDependencies);d3d11.lib;d3dx11.lib;D3DCompiler.lib</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)vc90.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\clearsky.h" />
+    <ClInclude Include="include\core\configurator.h" />
+    <ClCompile Include="include\core\PathExtractor.h" />
+    <ClInclude Include="include\core\precompiled.h" />
+    <ClInclude Include="include\core\core.h" />
+    <ClInclude Include="include\core\globals.h" />
+    <ClInclude Include="include\core\logger.h" />
+    <ClInclude Include="include\core\tgaloader.h" />
+    <ClInclude Include="include\core\timer.h" />
+    <ClInclude Include="include\core\utils.h" />
+    <ClInclude Include="include\gui\button.h" />
+    <ClInclude Include="include\gui\event.h" />
+    <ClInclude Include="include\gui\gui.h" />
+    <ClInclude Include="include\gui\guiskin.h" />
+    <ClInclude Include="include\gui\imouselistener.h" />
+    <ClInclude Include="include\gui\iwindowlistener.h" />
+    <ClInclude Include="include\gui\mouse.h" />
+    <ClInclude Include="include\gui\statictext.h" />
+    <ClInclude Include="include\gui\window.h" />
+    <ClInclude Include="include\inputsystem\keyboardhandler.h" />
+    <ClInclude Include="include\inputsystem\mousehandler.h" />
+    <ClInclude Include="include\math\boundingbox.h" />
+    <ClInclude Include="include\math\mathutils.h" />
+    <ClInclude Include="include\math\viewfrustum.h" />
+    <ClInclude Include="include\network\network.h" />
+    <ClInclude Include="include\network\networkData.h" />
+    <ClInclude Include="include\network\networkIncludes.h" />
+    <ClInclude Include="include\network\networkSocket.h" />
+    <ClInclude Include="include\network\networkQueue.h" />
+    <ClInclude Include="include\physics\physics.h" />
+    <ClInclude Include="include\physics\physicsIncludes.h" />
+    <ClInclude Include="include\physics\physicsmath.h" />
+    <ClInclude Include="include\physics\precision.h" />
+    <ClInclude Include="include\rendersystem\skeletonanim.h" />
+    <ClInclude Include="include\rendersystem\box.h" />
+    <ClInclude Include="include\rendersystem\camera.h" />
+    <ClInclude Include="include\rendersystem\directx11\dx11buffer.h" />
+    <ClInclude Include="include\rendersystem\directx11\dx11effect.h" />
+    <ClInclude Include="include\rendersystem\directx11\dx11inputlayout.h" />
+    <ClInclude Include="include\rendersystem\directx11\dx11renderer.h" />
+    <ClInclude Include="include\rendersystem\directx11\dx11sprite.h" />
+    <ClInclude Include="include\rendersystem\directx11\dx11texture2D.h" />
+    <ClInclude Include="include\rendersystem\fog.h" />
+    <ClInclude Include="include\rendersystem\font.h" />
+    <ClInclude Include="include\rendersystem\ibuffer.h" />
+    <ClInclude Include="include\rendersystem\ieffect.h" />
+    <ClInclude Include="include\rendersystem\iinputlayout.h" />
+    <ClInclude Include="include\rendersystem\irenderer.h" />
+    <ClInclude Include="include\rendersystem\isprite.h" />
+    <ClInclude Include="include\rendersystem\itexture2D.h" />
+    <ClInclude Include="include\rendersystem\light.h" />
+    <ClInclude Include="include\rendersystem\mesh.h" />
+    <ClInclude Include="include\rendersystem\particle.h" />
+    <ClInclude Include="include\rendersystem\primitivedrawer.h" />
+    <ClInclude Include="include\rendersystem\resourcemanager.h" />
+    <ClInclude Include="include\rendersystem\skybox.h" />
+    <ClInclude Include="include\rendersystem\startparams.h" />
+    <ClInclude Include="include\rendersystem\statedesc.h" />
+    <ClInclude Include="include\rendersystem\submesh.h" />
+    <ClInclude Include="include\rendersystem\terrain.h" />
+    <ClInclude Include="include\rendersystem\texturemanager.h" />
+    <ClInclude Include="include\rendersystem\vertexformats.h" />
+    <ClInclude Include="include\soundsystem\Audio.h" />
+    <ClInclude Include="include\soundsystem\AudioBase.h" />
+    <ClInclude Include="include\soundsystem\codec.h" />
+    <ClInclude Include="include\soundsystem\SDKwavefile.h" />
+    <ClInclude Include="include\soundsystem\SoundBase.h" />
+    <ClInclude Include="include\soundsystem\SoundLoader.h" />
+    <ClInclude Include="include\soundsystem\SoundPool.h" />
+    <ClInclude Include="include\soundsystem\vorbisfile.h" />
+    <ClInclude Include="include\soundsystem\XAudioIncludes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\core\configurator.cpp" />
+    <ClCompile Include="src\core\precompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\core\tgaloader.cpp" />
+    <ClCompile Include="src\gui\button.cpp" />
+    <ClCompile Include="src\gui\gui.cpp" />
+    <ClCompile Include="src\gui\guiskin.cpp" />
+    <ClCompile Include="src\gui\mouse.cpp" />
+    <ClCompile Include="src\gui\statictext.cpp" />
+    <ClCompile Include="src\gui\window.cpp" />
+    <ClCompile Include="src\inputsystem\keyboardhandler.cpp" />
+    <ClCompile Include="src\inputsystem\mousehandler.cpp" />
+    <ClCompile Include="src\math\boundingbox.cpp" />
+    <ClCompile Include="src\math\mathutils.cpp" />
+    <ClCompile Include="src\math\viewfrustum.cpp" />
+    <ClCompile Include="src\network\networkSocket.cpp" />
+    <ClCompile Include="src\network\networkQueue.cpp" />
+    <ClCompile Include="src\physics\physicsmath.cpp" />
+    <ClCompile Include="src\rendersystem\skeletonanim.cpp" />
+    <ClCompile Include="src\rendersystem\box.cpp" />
+    <ClCompile Include="src\rendersystem\camera.cpp" />
+    <ClCompile Include="src\rendersystem\directx11\dx11buffer.cpp" />
+    <ClCompile Include="src\rendersystem\directx11\dx11effect.cpp" />
+    <ClCompile Include="src\rendersystem\directx11\dx11inputlayout.cpp" />
+    <ClCompile Include="src\rendersystem\directx11\dx11renderer.cpp" />
+    <ClCompile Include="src\rendersystem\directx11\dx11sprite.cpp" />
+    <ClCompile Include="src\rendersystem\directx11\dx11texture2D.cpp" />
+    <ClCompile Include="src\rendersystem\fog.cpp" />
+    <ClCompile Include="src\rendersystem\font.cpp" />
+    <ClCompile Include="src\rendersystem\light.cpp" />
+    <ClCompile Include="src\rendersystem\mesh.cpp" />
+    <ClCompile Include="src\rendersystem\particle.cpp" />
+    <ClCompile Include="src\rendersystem\primitivedrawer.cpp" />
+    <ClCompile Include="src\rendersystem\resourcemanager.cpp" />
+    <ClCompile Include="src\rendersystem\skybox.cpp" />
+    <ClCompile Include="src\rendersystem\startparams.cpp" />
+    <ClCompile Include="src\rendersystem\statedesc.cpp" />
+    <ClCompile Include="src\rendersystem\submesh.cpp" />
+    <ClCompile Include="src\rendersystem\terrain.cpp" />
+    <ClCompile Include="src\rendersystem\texturemanager.cpp" />
+    <ClCompile Include="src\soundsystem\AudioBase.cpp" />
+    <ClCompile Include="src\soundsystem\SDKwavefile.cpp" />
+    <ClCompile Include="src\soundsystem\SoundBase.cpp" />
+    <ClCompile Include="src\soundsystem\SoundLoader.cpp" />
+    <ClCompile Include="src\core\core.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">core/precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="src\core\globals.cpp" />
+    <ClCompile Include="src\core\logger.cpp" />
+    <ClCompile Include="src\core\timer.cpp" />
+    <ClCompile Include="src\core\utils.cpp" />
+    <ClCompile Include="src\soundsystem\SoundPool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\data\shaders\bumpmap.inc" />
+    <None Include="..\data\shaders\default.fx" />
+    <None Include="..\data\shaders\default2.fx" />
+    <None Include="..\data\shaders\light.inc" />
+    <None Include="..\data\shaders\terrain.fx" />
+    <None Include="..\data\shaders\water.fx" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

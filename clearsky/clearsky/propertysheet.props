@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>..\clearsky\libs\tinyxml;..\clearsky\libs\freetype-2.4.2\include;..\clearsky\libs;..\clearsky\include\;C:\Program Files\development\libvorbis-1.3.1\include;C:\Program Files\development\libogg-1.2.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\development\boost\stage\lib;..\clearsky\libs\tinyxml;..\clearsky\libs\freetype-2.4.2\lib;..\clearsky\libs;..\clearsky\libs\effects11;..\clearsky\Release;$(DXSDK_DIR)\Lib\x86;$(LIB_VORBIS)lib;$(LIB_OGG)bin;$(LibraryPath)</LibraryPath>
+    <_PropertySheetDisplayName>propertysheetRelease</_PropertySheetDisplayName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PrecompiledHeaderFile>core/precompiled.h</PrecompiledHeaderFile>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>tinyxml.lib;freetype242.lib;d3dx11effects.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

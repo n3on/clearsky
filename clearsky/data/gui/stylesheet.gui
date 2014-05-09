@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<GUI>
+	<stylesheet name="Stylesheet1">
+	
+		<topwindow>
+			<color>0.0 0.0 0.0 0.0</color>
+		</topwindow>
+		
+		<window>
+			<gradient>
+				<startcolor>1.0 1.0 1.0 0.9</startcolor>
+				<endcolor>0.0 0.0 0.0 0.5</endcolor>
+				<type>VERTICAL</type>
+			</gradient>
+			<!-- <texture>..\\data\\gui\\mouse.png</texture> -->
+			<title>
+				<color>0.5 0.5 0.5 0.5</color>
+				<size>30</size>
+				<font>
+					<name>..\\data\\fonts\\GOODTIME.ttf</name>
+					<size>16</size>
+					<color>0.9 0.9 0.9 1.0</color>
+				</font>
+			</title>
+		</window>
+		
+		<button>
+			<gradient>
+				<startcolor>1.0 1.0 1.0 0.9</startcolor>
+				<endcolor>0.0 0.0 0.0 0.5</endcolor>
+				<type>VERTICAL</type>
+			</gradient>
+			<mouseover>
+				<gradient>
+					<startcolor>0.0 0.0 0.0 0.5</startcolor>
+					<endcolor>1.0 1.0 1.0 0.9</endcolor>
+					<type>VERTICAL</type>
+				</gradient>
+			</mouseover>
+			<font>
+				<name>..\\data\\fonts\\arial.ttf</name>
+				<size>16</size>
+				<color>0.0 0.0 0.0 1.0</color>
+			</font>
+		</button>
+		
+		<cursor>
+			<texture>..\\data\\gui\\mouse.png</texture>
+		</cursor>
+		
+		<statictext>
+			<font>
+				<name>..\\data\\fonts\\arial.ttf</name>
+				<size>16</size>
+				<color>0.0 0.0 0.0 1.0</color>
+			</font>
+		</statictext>
+		
+	</stylesheet>
+</GUI>
